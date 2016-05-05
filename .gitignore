@@ -2,5 +2,7 @@
 */.DS_Store
 node_modules
 *.log
-dist/scripts
+dist/bundle.js
+dist/bundle.js.map
+dist/bundle.css
 build
