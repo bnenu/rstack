@@ -1,0 +1,44 @@
+@import '../../../assets/styles/vars';
+
+.sidebar {
+    margin-top: $header-height;
+    background-color: $main-color-dark;
+    width: $sidebar-width;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: all 0.3s ease-out;
+
+    nav {
+      padding-top: 15px;
+      li > a, .navCategory {
+        padding: 8px 15px 8px 25px;
+        margin: 0 0;
+      }
+      .navInfo {
+        margin-top: 50px;
+        padding: 20px 25px 25px 25px;
+        font-size: 12px;
+        background-color: $main-color-dark;
+      }
+    }
+}
+.sidebarToggle {
+  transform: translate3d(-200px, 0, 0);
+}
+.sidebar nav {
+    background-color: #2a2d35;
+}
+
+.sidebar:before {
+    transition: all 0.3s ease-out;
+    content: '';
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+    background-color: $main-color-dark;
+    width: $sidebar-width;
+}

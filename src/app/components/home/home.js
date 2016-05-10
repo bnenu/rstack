@@ -1,15 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router'
 import styles from './home.css';
 
 const Home = () => <div>
   <h1 className={ styles.title }>
-    New ...Home page is awesome
+    New ...Home page
   </h1>
-  <h1> And default style</h1>
   <section>
     <div className="row">
       <div className="col-xs-6">
-        a better future
+        <Link to="/login">Login</Link>
+      </div>
+      <div className="col-xs-6">
+        <Link to="/signup">Signup</Link>
       </div>
     </div>
   </section>

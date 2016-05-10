@@ -1,5 +1,7 @@
 @import 'vars';
-
-h1 {
-  color: $primary-color;
+//@import '../../../node_modules/bootstrap/scss/bootstrap';
+// @import 'theme';
+body {
+  background-color: $main-color;
+  color: $main-color-light;
 }

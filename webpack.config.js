@@ -3,7 +3,7 @@ const autoprefixer = require('autoprefixer')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 const sassLoaders = [
-  'css',
+  'css?modules&localIdentName=[name]---[local]---[hash:base64:5]',
   'postcss',
   'sass'
 ]

@@ -1,0 +1,21 @@
+.widget {
+  flex:1 0 auto;
+  margin: 0 1em 1em 0;
+  min-width: 250px;
+  max-width: 500px;
+  // max-height: 250px;
+  border-radius: 0;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+.title {
+  flex-grow: 2;
+}
+
+.body {
+}

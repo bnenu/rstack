@@ -1,0 +1,13 @@
+@import '../../../assets/styles/vars';
+
+.content {
+  margin-top: $header-height;
+  margin-left: $sidebar-width;
+  position: relative;
+  padding: 30px;
+  transition: margin-left 0.3s ease-out;
+  background-color: $main-color;
+}
+.expanded {
+  margin-left: 0;
+}
