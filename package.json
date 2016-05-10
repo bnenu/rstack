@@ -7,6 +7,7 @@
     "start": "webpack-dev-server --host 0.0.0.0 --port 3000 --inline --hot",
     "deploy": "NODE_ENV=production webpack -p --output-public-path /dist/",
     "test": "BABEL_DISABLE_CACHE=1 NODE_ENV=test tape -r babel-register src/**/*.spec.js",
+    "serve": "NODE_ENV=production node server.js",
     "lint": "eslint --ext .js src/**"
   },
   "keywords": [
@@ -21,6 +22,7 @@
   "dependencies": {
     "axios": "^0.11.0",
     "bootstrap": "^4.0.0-alpha.2",
+    "express": "^4.13.4",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-redux": "^4.4.5",
