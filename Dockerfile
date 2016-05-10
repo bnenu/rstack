@@ -1,14 +1,15 @@
 # nodejs static site
 FROM node:4-onbuild
 
+WORKDIR /public
 # Bundle app source
-COPY package.json /www/
+COPY package.json /public/
 # Install app dependencies
-RUN cd /www npm install
+RUN npm install
 
 # Copy distro
-COPY ./dist /www/dist/
-COPY server.js /www/
+COPY ./dist /public/dist/
+COPY server.js /public/
 
 EXPOSE  8080
-CMD cd /www && node server.js
+CMD NODE_ENV=production node server

@@ -1,0 +1,4 @@
+npm run-script deploy
+
+docker build -t nside/rstack:1.0 .
+docker push nside/rstack:1.0
