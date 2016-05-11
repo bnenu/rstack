@@ -16,8 +16,8 @@ const Header = (props) => {
   return (
       <nav className={`navbar navbar-default navbar-fixed-top ${styles.header}`}>
         <Link className={`navbar-brand ${styles.brand}`} to="/">
-            Default
-            <span className={styles.subBrand}>app</span>
+            Marifact
+            <span className={styles.subBrand}>1.0</span>
         </Link>
         <div className={styles.leftNavToggle}>
             <a href="" onClick={handleToggle}>
@@ -25,17 +25,17 @@ const Header = (props) => {
             </a>
         </div>
         <div className={styles.title}>
-          { props.title || 'App title' }
+          { props.title || 'AIS' }
         </div>
         <ul className={`nav navbar-nav ${styles.headerNav}`}>
             <li className="dropdown">
-                <a href="versions.html" >Versions
+                <a href="#" >Notifications
                     <span className="label label-warning pull-right">2</span>
                 </a>
             </li>
-            <li className=" profil-link">
+            <li className="#">
                 <a href="login.html">
-                    <span className="profile-address">me@company.io</span>
+                    <span className="profile-address">me@example.io</span>
                     <img src="images/profile.jpg" className="img-circle" alt=""/>
                 </a>
             </li>
